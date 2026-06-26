@@ -1,0 +1,44 @@
+{
+  "name": "guerrillamail-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the Guerrilla Mail temporary email API.",
+  "type": "module",
+  "author": "Ditzzy (cv3inx)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cv3inx/guerrillamail-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cv3inx/guerrillamail-mcp/issues"
+  },
+  "homepage": "https://github.com/cv3inx/guerrillamail-mcp#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "guerrillamail-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "guerrillamail",
+    "temp-email",
+    "disposable-email"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
