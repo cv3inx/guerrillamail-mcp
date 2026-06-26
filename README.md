@@ -1,6 +1,21 @@
 # guerrillamail-mcp
 
-MCP server for the [Guerrilla Mail](https://www.guerrillamail.com/) temporary/disposable email API. Spin up throwaway inboxes, poll for mail, and read messages from any MCP client.
+[![npm version](https://img.shields.io/npm/v/guerrillamail-mcp.svg)](https://www.npmjs.com/package/guerrillamail-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/guerrillamail-mcp.svg)](https://www.npmjs.com/package/guerrillamail-mcp)
+[![license](https://img.shields.io/npm/l/guerrillamail-mcp.svg)](./LICENSE)
+[![Node](https://img.shields.io/node/v/guerrillamail-mcp.svg)](https://nodejs.org)
+
+MCP server for the [Guerrilla Mail](https://www.guerrillamail.com/) temporary/disposable email API. Spin up throwaway inboxes, poll for mail, and read messages from any MCP client — Claude Desktop, Claude Code, Cursor, or any other.
+
+**Zero config. No API key. One command.**
+
+```bash
+npx -y guerrillamail-mcp
+```
+
+## Why
+
+Need a throwaway email inside an AI workflow — signup testing, OTP capture, scratch inbox — without leaving the agent? This wires Guerrilla Mail's disposable inboxes straight into the Model Context Protocol so your agent can create an address, watch for mail, and read it, all on its own.
 
 ## Install & usage
 
