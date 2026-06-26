@@ -50,7 +50,9 @@ async function api(params: Record<string, string>): Promise<any> {
     if (match) cookieJar = match[0];
   }
 
-  const data = await res.json();
+  // Some endpoints (e.g. del_email) can return an empty body — guard the parse.
+  const text = await res.text();
+  const data = text ? JSON.parse(text) : {};
   if (data && typeof data.sid_token === "string") sidToken = data.sid_token;
   return data;
 }
